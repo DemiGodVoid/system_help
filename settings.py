@@ -40,7 +40,7 @@ while running:
                 if button_rect_1.collidepoint(event.pos):
                     webbrowser.open("https://discord.gg/5hgNB42uPe")
                 elif button_rect_2.collidepoint(event.pos):
-                    webbrowser.open("https://www.google.com")
+                    webbrowser.open("https://github.com/DemiGodVoid/system_help")
 
     # Clear the screen
     screen.fill(BLACK)
