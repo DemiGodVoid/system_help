@@ -55,13 +55,17 @@ def open_storage_detector():
     else:
         print("Error: 'Storage_detector.py' not found in the script's directory.")
 
-# Function to open tools.py
+
+# Function to open tools.py through the folder it's in
 def open_tools():
-    tools_script = os.path.join(script_dir, 'tools.py')
+    tools_folder = os.path.join(script_dir, 'tools')  # Construct the path to the "tools" folder
+    tools_script = os.path.join(tools_folder, 'tools.py')  # Construct the path to tools.py
     if os.path.exists(tools_script):
         subprocess.Popen([sys.executable, tools_script])
     else:
-        print("Error: 'tools.py' not found in the script's directory.")
+        print("Error: 'tools.py' not found in the tools folder.")
+
+
 
 # Function to open settings.py
 def open_settings():
